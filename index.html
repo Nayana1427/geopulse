@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthSync</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <div class="logo">🌍 GeoPulse</div>
+            <div class="tagline">
+                Environmental Intelligence Platform
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="city-search"
+                placeholder="Search city..."
+            >
+
+            <button id="search-btn">
+                Search
+            </button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <aside class="sidebar">
+
+            <div class="card">
+                <h2>🌍 Selected City</h2>
+                <div id="city-info">
+                    Click any marker on the map
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🌦 Weather</h2>
+                <div id="weather-info">
+                    Select a city
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🌫 Air Quality</h2>
+                <div id="aqi-info">
+                    Waiting for data
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>⚠ Climate Risk</h2>
+
+                <div class="risk-circle">
+                    72%
+                </div>
+
+                <div class="risk-label">
+                    Moderate Risk
+                </div>
+            </div>
+
+        </aside>
+
+        <section class="map-section">
+
+            <div id="map"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        EarthSync • Climate Intelligence Dashboard
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
